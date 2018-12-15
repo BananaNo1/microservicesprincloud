@@ -1,0 +1,28 @@
+server:
+  port: 8001
+
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.springcloud.entity
+  mapper-locations: classpath:mybatis/mappers/**/*.xml
+
+spring:
+  application:
+    name: microservicecloud-dept
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://localhost:3306/cloud
+    username: root
+    password: admin
+    min-idle: 5
+    initial-size: 1
+    max-idle: 15
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka,http://eureka7004.com:7004/eureka
+    instance:
+      instance-id: microservicecloud-dept8001
+      prefer-ip-address: true

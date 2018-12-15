@@ -1,0 +1,12 @@
+server:
+  port: 80
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://localhost:3306/cloud
+    username: root
+    password: admin
+    min-idle: 5
+    initial-size: 1
+    max-idle: 15
