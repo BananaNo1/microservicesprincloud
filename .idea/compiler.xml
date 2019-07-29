@@ -7,6 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="microservice-eureka-7002" />
+        <module name="microservice-eureka-7003" />
+        <module name="microservice-eureka-7004" />
+        <module name="microserviceCloud-api" />
+        <module name="microserviceCloud-consumer-dept-80" />
+        <module name="microservicecloud-provider-dept-8001" />
         <module name="microserviceCloudapi" />
         <module name="microserviceCloudconsumerdept80" />
         <module name="microservicecloudproviderdept8001" />

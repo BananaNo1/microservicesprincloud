@@ -2,10 +2,12 @@ package com.springcloud.dao;
 
 import com.springcloud.cfgbeans.entity.Dept;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Mapper
+@Repository
 public interface DeptMapper {
     int deleteByPrimaryKey(Long deptno);
 
@@ -19,5 +21,5 @@ public interface DeptMapper {
 
     int updateByPrimaryKey(Dept record);
 
-    List<Dept>  list();
+    List<Dept> list();
 }
